@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Mega Hack",
+    "slug": "megahack",
     "platforms": [
       "ios",
       "android",
@@ -11,9 +11,8 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#78C055"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

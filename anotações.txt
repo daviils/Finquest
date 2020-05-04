@@ -1,0 +1,3 @@
+adiciona imagem ao carregar o app
+
+"image": "./assets/splash.png",
