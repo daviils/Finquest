@@ -3,9 +3,6 @@ import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar, Platform, KeyboardAvoidingView, ImageBackground, Text, FlatList, View, TextInput, TouchableOpacity } from 'react-native';
 import { Form } from '@unform/mobile';
-import { Scope } from '@unform/core';
-
-import { data } from '../welcome'
 
 import * as Yup from 'yup';
 
@@ -68,12 +65,12 @@ export default function Login() {
 
       
 
-      if(data.email === 'Mega@hack.com' & data.password === '123'){
+      if(data.email === 'mega@hack.com' & data.password === '123'){
         reset();
         navigationToDashboard();
       }
       else{
-        alert('login não encontrato, tente novamente Mega@hack.com senha 123 hehehe');
+        alert('login não encontrato, tente novamente mega@hack.com senha 123 hehehe');
       }
 
       

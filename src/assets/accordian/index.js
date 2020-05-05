@@ -15,6 +15,9 @@ export default class Accordian extends Component{
           expanded : false,
         }
     }
+
+
+
   
   render() {
 
@@ -33,15 +36,14 @@ export default class Accordian extends Component{
                 this.state.expanded &&
                 <View style={[styles.child,{backgroundColor: this.props.color} ]}>
                     <Text style={styles.childtext}>{this.props.data}</Text> 
-                    <TouchableOpacity 
-                      style={[stylesform.Button,{backgroundColor:"#fff"}]}
-                      // onPress={() => formRef.current.submitForm()}
-                    >
-                      <Text style={[stylesform.textButton,{color:this.props.color}]}
-                      >
-                        click aqui para acessar a dica!
-                      </Text>
-                    </TouchableOpacity>   
+ 
+                    <View>
+                    { this.challengeTips() }
+                    </View>
+
+                    <View>
+                    { this.challengeDay() }
+                    </View>  
                 </View>
             }
             
@@ -52,6 +54,42 @@ export default class Accordian extends Component{
 
   toggleExpand=()=>{
     this.setState({expanded : !this.state.expanded})
+  }
+
+  challengeTips=()=>{
+
+    if(this.props.color !== "#C4C4C4" ){
+      return(
+        <TouchableOpacity 
+        style={[stylesform.Button,{backgroundColor:"#fff"}]}
+        // onPress={() => formRef.current.submitForm()}
+      >
+        <Text style={[stylesform.textButton,{color:this.props.color}]}
+        >
+          click aqui para acessar a dica!
+        </Text>
+      </TouchableOpacity>
+      )
+    }
+    
+  }
+
+  challengeDay=()=>{
+
+    if(this.props.color === "#50B0BB"){
+      return(
+        <TouchableOpacity 
+        style={[stylesform.Button,{backgroundColor:"#78C055"}]}
+        // onPress={() => formRef.current.submitForm()}
+      >
+        <Text style={[stylesform.textButton,{color:"#fff"}]}
+        >
+          desafio concluido!
+        </Text>
+      </TouchableOpacity>
+      )
+    }
+
   }
 
 

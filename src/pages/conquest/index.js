@@ -84,7 +84,7 @@ export default function Conquest() {
                         color="#50B0BB"
                         shadowColor="#999"
                         bgColor="#fff"
-                    >
+                      >
                         <Text style={{ fontSize: 18 }}>{'3/5'}</Text>
                     </ProgressCircle>
                     </View>

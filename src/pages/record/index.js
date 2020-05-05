@@ -1,15 +1,10 @@
-import React ,{ useRef } from 'react';
+import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Feather,  FontAwesome5} from '@expo/vector-icons'
-import { StatusBar, Platform, KeyboardAvoidingView, ImageBackground, Text, FlatList, View, TextInput, TouchableOpacity } from 'react-native';
+import { Feather} from '@expo/vector-icons'
+import { StatusBar, ImageBackground, Text, FlatList, View, TouchableOpacity } from 'react-native';
 import { Form } from '@unform/mobile';
-import { Scope } from '@unform/core';
-
-import * as Yup from 'yup';
 
 import RadioGroup,{Radio} from "react-native-radio-input";
-
-import Input from '../../Components/form/input';
 
 import stylesform from '../../assets/styles/form';
 import styles from './styles';
@@ -18,7 +13,7 @@ import styles from './styles';
 
 import Background from '../../assets/image/backgroundHome.png';
 
-export default function Record(validation) {
+export default function Record() {
   const navigation = useNavigation();
   
 

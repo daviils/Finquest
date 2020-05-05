@@ -37,7 +37,6 @@ export default StyleSheet.create({
 
     Button:{
         borderStyle: 'solid',
-        borderWidth: 2,
         borderRadius: 5,
         borderColor: '#78C055',
         paddingVertical: 10,

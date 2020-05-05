@@ -2,7 +2,6 @@ import React ,{ useRef } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar, Platform, KeyboardAvoidingView, ImageBackground, Text, FlatList, View, TextInput, TouchableOpacity } from 'react-native';
 import { Form } from '@unform/mobile';
-import { Scope } from '@unform/core';
 
 import * as Yup from 'yup';
 

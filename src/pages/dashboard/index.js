@@ -1,14 +1,13 @@
 import React from 'react';
 import { Feather,  FontAwesome5} from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native';
-import { Dimensions, FlatList, ImageBackground, Text, View, TouchableOpacity, Image } from 'react-native';
+import { FlatList, ImageBackground, Text, View, TouchableOpacity, Image } from 'react-native';
 
 import Accordian from '../../Components/accordianList';
 import styles from './styles';
 
 import Background from '../../assets/image/backgroundHome.png'
 import User from '../../assets/image/user.jpg';
-import logo from '../../assets/image/logo.jpg';
 
 
 state = {
@@ -71,13 +70,13 @@ export default function Dashboard() {
   }
 
   function navigationToReacord(){
-    navigation.navigate('Record',validation);
+    navigation.navigate('Record');
   }
 
   function renderDashboard() {
     
 
-    if(validation === true){
+    if(validation === false){
       return (
         <View>
 

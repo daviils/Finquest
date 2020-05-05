@@ -18,7 +18,13 @@ export default function Perfil() {
     }
 
     function callPassword(){
-        navigation.goBack();
+        
+
+            return(
+                <NewPassword/>
+            )
+       
+
     }
 
     return (
@@ -42,10 +48,10 @@ export default function Perfil() {
                         <Text style={styles.Name}>Mega hack</Text>
                         <Text style={styles.descriptionUser}>Mega@hack.com</Text>
                         <Text style={styles.descriptionUser}>Entrou em: 03/05/2020</Text>
-                        <Text style={styles.descriptionUser}>4 missões completas</Text>
+                        <Text style={styles.descriptionUser}>2 missões completas</Text>
                         <View >
                             <TouchableOpacity style={stylesform.Button}
-                            onPress={(ViewPassword) => {ViewPassword = 'flex'}}>
+                            onPress={callPassword}>
                                 <Text style={stylesform.textButton} 
                                 >
                                 Alterar senha
@@ -53,7 +59,7 @@ export default function Perfil() {
                             </TouchableOpacity>
                         </View>
 
-                        <NewPassword/>
+                        {/* { callPassword() } */}
                        
                     </View>
                 )}

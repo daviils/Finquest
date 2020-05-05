@@ -29,15 +29,15 @@ export default class AccordianList extends Component {
             },
             { 
               id: '03',
-              color: '#BB5050',
+              color: '#50B0BB',
              title: 'Cuide da sua saúde - 80xp',
              data: 'Ter saúde é o essencial para ir atrás de todos os outros objetivos. Quando você não faz um exercício físico por muito tempo ou não cuida da sua saúde, chega um momento em que você terá muitos gastos com remédios e exames. Cuide da sua saúde hoje para que ela não te traga grandes gastos futuramente!.'
             },
             { 
-              id: '04',
-              color: '#50B0BB',
-              title: 'Quebre a quarentena - 80xp', 
-              data: 'Biryani also known as biriyani, biriani, birani or briyani, is a mixed rice dish with its origins among the Muslims of the Indian subcontinent. This dish is especially popular throughout the Indian subcontinent, as well as among the diaspora from the region. It is also prepared in other regions such as Iraqi Kurdistan.',
+              id: '05',
+              color: '#C4C4C4',
+              title: 'bloqueado',
+              data: 'Termine a missão anterior para desbloquear'
             },
             { 
               id: '05',
